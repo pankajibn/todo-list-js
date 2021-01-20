@@ -16,7 +16,7 @@ const showAlert = function (message, msgClass) {
   messageDiv.classList.add(msgClass, "show");
   messageDiv.classList.remove("hide");
   setTimeout(() => {
-    messageDiv.classList.remove("show");
+    messageDiv.classList.remove("show",msgClass);
     messageDiv.classList.add("hide");
   }, 3000);
   return;
